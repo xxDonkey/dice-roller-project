@@ -3,9 +3,16 @@
     <head>
         <title>Dice Roller Project</title>
         <script src="main.js"></script>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <img id="dice" width="256" height="256" src="img/dice1.png">
-        <button type="button" onClick="on_press()">Test</button>
+        <div>
+            <img id="dice" width="256" height="256" src="img/dice1.png">
+        </div>
+        <div>
+            <button type="button" onClick="on_press()">Roll Die</button>
+            <label id="num_dice_label">Number of rolls:</label>
+            <input type="text" id="num_dice">
+        </div>
     </body>
 </html>
