@@ -1,6 +1,6 @@
 const img_folder = "img"
 const file_name = "dice"
-
+    
 function set_img_src(index)
 {
     var src = img_folder + "/" + file_name + index + ".png";
