@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
+        <!-- Contains the GUI elements. -->
+
         <div>
             <button id="roll_die_button" type="button" onClick="roll()">Roll Die</button>
             <label>Number of Dice</label>
@@ -13,18 +15,20 @@
             <label>Number of Faces</label>
             <input class="l" id="num_sides" type="text" value="6">
         </div>
+
+        <!-- Contains the winner labelling. -->
+
         <div id="text_div">
             <span class="score" id="score1">1</span>
             <span id="winner">It's a tie!</span>
             <span class="score" id="score2">1</span>
         </div>
+
+        <!-- Dice divider. Replicated/deleted dynamically. -->
+
         <div class="dice">
             <img id="0die1" width="256" height="256" src="img/dice1.png">
             <img id="0die2" width="256" height="256" src="img/dice1.png">
         </div>
-        <!-- <div class="dice">
-            <img id="2die1" width="256" height="256" src="img/dice1.png">
-            <img id="2die2" width="256" height="256" src="img/dice1.png">
-        </div> -->
     </body>
 </html>
