@@ -1,13 +1,11 @@
+div {
+    text-align: center;
+}
+
+#roll_die_button {
+    width: 100px;
+}
+
 #num_dice {
-    width: 20px;
-}
-
-#dice_selector {
-    width: 128px;
-    text-align: center;
-}
-
-#switch_mode_button {
-    width: 128px;
-    text-align: center;
+    width: 100px;
 }

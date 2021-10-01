@@ -7,24 +7,17 @@
     </head>
     <body>
         <div>
-            <img id="die" width="256" height="256" src="img/six/dice1.png">
+            <button id="roll_die_button" type="button" onClick="roll()">Roll Die</button>
+            <input id="num_dice" type="text" value="1">
+            <p id="winner"></p>
         </div>
-        <div>
-            <select name="dice" id="dice_selector">
-                <option value="four">4</option>
-                <option value="six">6</option>
-                <!-- <option value="8">8</option>
-                <option value="20">20</option> -->
-            </select>
-            <button id="switch_mode_button" type="button" onClick="switch_mode()">Switch Mode</button>
+        <div class="dice">
+            <img id="1die1" width="256" height="256" src="img/dice1.png">
+            <img id="1die2" width="256" height="256" src="img/dice1.png">
         </div>
-        <div id="reg_mode">
-            <button type="button" onClick="on_roll_die()">Roll Die</button>
-            <label id="num_dice_label">Number of rolls:</label>
-            <input type="text" id="num_dice" value=1>
-        </div>
-        <div hidden id="vs_mode">
-            <p>VERSUS</p>
-        </div>
+        <!-- <div class="dice">
+            <img id="2die1" width="256" height="256" src="img/dice1.png">
+            <img id="2die2" width="256" height="256" src="img/dice1.png">
+        </div> -->
     </body>
 </html>
