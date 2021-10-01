@@ -32,12 +32,13 @@ function create_img_div(i)
 function roll()
 {
     var num_dice = parseInt(document.getElementById("num_dice").value)
+    var faces = parseInt(document.getElementById("num_sides").value)
     var img_divs = document.getElementsByClassName("dice")  
     
     if (num_dice > img_divs.length)
         for (var i = img_divs.length; i < num_dice; i++)
         {
-            create_img_div(i);
+            create_img_div(i)
         }
 
     else if (num_dice < img_divs.length)
@@ -46,6 +47,12 @@ function roll()
             console.log(i)
             img_divs[i].remove()
         }
+    
+    if (faces < 1)
+        document.getElementById("num_sides").value = 1
+
+    else if (faces > 6)
+        document.getElementById("num_sides").value = 6
 
     var t1 = 0
     var t2 = 0
@@ -54,14 +61,17 @@ function roll()
     {
         console.log(i)
 
-        var index1 = Math.round(Math.random() * 5) + 1
+        var index1 = Math.round(Math.random() * (faces - 1)) + 1
         set_img_src(index1, i + "die1")
         t1 += index1
         
-        var index2 = Math.round(Math.random() * 5) + 1
+        var index2 = Math.round(Math.random() * (faces - 1)) + 1
         set_img_src(index2, i + "die2")
         t2 += index2
     }
+
+    document.getElementById("score1").innerHTML = t1
+    document.getElementById("score2").innerHTML = t2
 
     if (t1 < t2)
         document.getElementById("winner").innerHTML = "Player 2 wins!"

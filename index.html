@@ -8,8 +8,15 @@
     <body>
         <div>
             <button id="roll_die_button" type="button" onClick="roll()">Roll Die</button>
-            <input id="num_dice" type="text" value="1">
-            <p id="winner"></p>
+            <label>Number of Dice</label>
+            <input class="l" id="num_dice" type="text" value="1">
+            <label>Number of Faces</label>
+            <input class="l" id="num_sides" type="text" value="6">
+        </div>
+        <div id="text_div">
+            <span class="score" id="score1">1</span>
+            <span id="winner">It's a tie!</span>
+            <span class="score" id="score2">1</span>
         </div>
         <div class="dice">
             <img id="0die1" width="256" height="256" src="img/dice1.png">

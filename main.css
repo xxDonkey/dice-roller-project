@@ -1,8 +1,59 @@
+body {
+    background-image: url("img/background.jpeg");
+}
+
 div {
     text-align: center;
 }
 
-img{
+#text_div {
+    padding-top: 10px;
+}
+
+span {
+    font-size: 40px;
+    font-family: Trattatello, fantasy;
+}
+
+.score {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+label {
+    font-size: 20px;
+    font-family: Trattatello, fantasy;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button {
+    font-size: 20px;
+    font-family: Trattatello, fantasy;
+    background-color: #c99157;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #a67644;
+}
+
+input {
+    font-size: 20px;
+    font-family: Trattatello, fantasy;
+    text-align: center;
+    background-color: #c99157;
+    border: none;
+    border-radius: 5px;
+}
+
+input:hover {
+    background-color: #a67644;
+}
+
+img {
     padding: 20px;
 }
 
@@ -10,6 +61,6 @@ img{
     width: 100px;
 }
 
-#num_dice {
+.l {
     width: 100px;
 }
