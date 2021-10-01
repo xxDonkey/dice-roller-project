@@ -2,6 +2,10 @@ div {
     text-align: center;
 }
 
+img{
+    padding: 20px;
+}
+
 #roll_die_button {
     width: 100px;
 }
